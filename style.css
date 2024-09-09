@@ -1,0 +1,178 @@
+body {
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0.541);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#theme-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#theme-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.theme-button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#word-display {
+    font-size: 36px;
+    margin: 20px;
+}
+
+#wrong-letters {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#hangman {
+    margin: 20px;
+}
+
+#hangman-image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#message {
+    font-size: 24px;
+    margin: 20px;
+}
+
+#keyboard {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.letter {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+#Ç {
+    animation-name: shake;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.letter:disabled {
+    background-color: #60b439;
+    cursor: not-allowed;
+}
+
+@keyframes shake {
+    0% {transform: rotate(-22.5deg);}
+    25% {transform: rotate(22.5deg);}
+    50% {transform: rotate(-22.5deg);}
+    75% {transform: rotate(22.5deg);}
+    100% {transform: rotate(-22.5deg);}
+}
+
+/* Estilos responsivos para telas menores que 768px (tablets e pequenos laptops) */
+@media (max-width: 768px) {
+    #word-display {
+        font-size: 24px;
+    }
+
+    #wrong-letters {
+        font-size: 16px;
+    }
+
+    #message {
+        font-size: 20px;
+    }
+
+    .letter {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 4px;
+    }
+
+    .theme-button {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+/* Estilos responsivos para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    #theme-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .theme-button {
+        padding: 10px;
+        width: 100%; /* Botões ocupam toda a largura */
+    }
+
+    #keyboard {
+        flex-direction: column; /* Teclado disposto em coluna */
+    }
+
+    .letter {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 3px;
+    }
+
+    #word-display {
+        font-size: 20px;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+
+    #wrong-letters {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #hangman {
+        margin: 10px;
+    }
+}
