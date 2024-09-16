@@ -6,9 +6,9 @@ const words = [
     "BEJE", "CARAMELO", "SALMAO", "TAUPE",
     "ESMERALDA", "VIOLETA", "CEREJA", "AÇAFRAO", "JADE", 
     "CARMESIM", "ORQUIDEA", "SAFIRA", "TOPAZIO", "MELROSA", 
-    "LIMA", "COBALTO", "LAVANDA", "CARBONO", "AZULBEI", 
-    "EBANO", "MARFIM", "TERROSO", "LILAS", "ALFAZEMA", 
-    "FUCSIA", "TERRAQUEA", "CHOCOLATE",];
+    "LIMA", "COBALTO", "LAVANDA", "CARBONO",
+    "MARFIM", "LILAS", "ALFAZEMA", 
+    "FUCSIA", "CHOCOLATE"];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 let wordDisplay = [];
 let wrongLetters = [];
