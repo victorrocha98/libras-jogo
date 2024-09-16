@@ -8,7 +8,7 @@ const words = [
     "CARMESIM", "ORQUIDEA", "SAFIRA", "TOPAZIO", "MELROSA", 
     "LIMA", "COBALTO", "LAVANDA", "CARBONO",
     "MARFIM", "LILAS", "ALFAZEMA", 
-    "FUCSIA", "CHOCOLATE"];
+    , "CHOCOLATE"];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 let wordDisplay = [];
 let wrongLetters = [];
